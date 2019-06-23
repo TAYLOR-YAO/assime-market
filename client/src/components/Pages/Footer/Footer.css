@@ -1,0 +1,40 @@
+#root > div > footer{
+    width: 100%;
+    background: #333;
+    margin: 0 !important;
+   }
+
+
+#root > div > footer > div:nth-child(1) > div > div > div.col-md-6.col-lg-7.text-center.text-md-right a{
+    margin: 0 10px;
+    position: relative;
+    top: 20px;
+
+}
+
+#root > div > footer > div:nth-child(1) > div > div > div.col-md-6.col-lg-7.text-center.text-md-right a i{
+    height: 50px;
+    font-size: 30px;
+}
+
+#root > div > footer > div.container.mt-5.mb-4.text-center.text-md-left > div > div.col-md-3.col-lg-4.col-xl-3.mb-4 > hr{
+    display: none;
+    margin-left: 150px;
+}
+
+#root > div > footer > div.container.mt-5.mb-4.text-center.text-md-left > div > div.col-md-2.col-lg-2.col-xl-2.mb-4 > hr{
+    margin-left: 50px;
+    display: none;
+    
+}
+#root > div > footer > div.container.mt-5.mb-4.text-center.text-md-left > div > div.col-md-3.col-lg-2.col-xl-2.mb-4 > hr{
+    margin-left: 50px;
+    display: none;
+    
+}
+#root > div > footer > div.container.mt-5.mb-4.text-center.text-md-left > div > div:nth-child(4) > hr{
+    position: relative;
+    margin-left: 100px;
+    display: none;
+    
+}

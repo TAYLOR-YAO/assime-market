@@ -1,0 +1,8 @@
+.item-details-button:focus{
+    outline: none;
+  }
+  .price-stike{
+    text-decoration-line: line-through;
+    color: gray;
+    margin-top: -20px;
+  }

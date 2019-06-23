@@ -1,0 +1,26 @@
+.payement-logo{
+    width: 70px;
+    height: 70px;
+}
+.summary-checkout {
+    display: block;
+}
+.btn-close{
+    background: #6351ce;
+    display: block;
+    float: right;
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.625rem 0;
+    width: 15%;
+}
+.checkout-cta {
+    display: block;
+    float: none;
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.625rem 0;
+    width: 100%;
+}

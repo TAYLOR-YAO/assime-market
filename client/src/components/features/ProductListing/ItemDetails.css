@@ -1,0 +1,19 @@
+
+
+.itemDetailsWell{
+    position: relative;
+    bottom: 5px;
+    padding-top: 40px;
+    padding-bottom: -40px !important;
+    text-align: center;
+}
+.itemDetailsWell p{
+    font-size: 12px;
+}
+
+#item-details-button{
+    margin-left: 10px;
+    margin-top: -53px !important;
+    background: rgb(255, 255, 255) transparent !important;
+    float: right;
+}

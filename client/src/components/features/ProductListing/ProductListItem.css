@@ -1,0 +1,38 @@
+
+.productCard{
+  width: 220px;
+  overflow: hidden;
+  margin: 5px 5px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px grey;
+  float: left;
+  text-align: center;
+}
+
+.imagebox{
+  width: 100%;
+  height: 250px;
+  margin-top: -10px;
+}
+
+.imagebox img{
+  width: 100%;
+  height: 100%;
+
+}
+
+.item-information{
+  position: relative;
+  bottom: 15px;
+}
+
+.checked {
+  color: orange;
+}
+
+.addToCart{
+  /* margin-top: -50px; */
+  margin-bottom: 10px;
+  float: right;
+}
+

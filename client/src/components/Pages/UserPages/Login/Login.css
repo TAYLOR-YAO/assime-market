@@ -1,0 +1,34 @@
+
+
+.static-modal {
+  text-align: center;
+  padding: 0!important;
+  
+  }
+  
+  .modal:before {
+  content: '';
+  background: darkred !important;
+  
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+  }
+  
+  .modal-dialog {
+    background: darkblue;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+  }
+  /* .modal-body {
+    background-image: url('https://image.freepik.com/vetores-gratis/e-commerce-conceito_23-2147505751.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: 600px 600px;
+} */
+
