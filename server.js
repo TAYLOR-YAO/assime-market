@@ -36,9 +36,16 @@ if(process.env.NODE_ENV === "production"){
 //Connection to mongoDB
 const mongoose = require('mongoose');
 mongoose.Promise = Promise;
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://assime:assime228@ds341837.mlab.com:41837/heroku_tk9srqsq', ()=>{
-    console.log("Succesfuly Connected to MongoDB")
-});
+// mongoose.connect(process.env.MONGODB_URI || 'mongodb://assime:assime228@ds341837.mlab.com:41837/heroku_tk9srqsq', ()=>{
+//     console.log("Succesfuly Connected to MongoDB")
+// });
+
+// ---------------------------------CosmossDB Connector --------------------------------
+mongoose.connect(process.env.CONNECTING_STRING || 'mongodb://localhost/assime228', ()=>{
+        console.log("Succesfuly Connected to Localhost")
+    });
+// --------------------------------------------------------------------------------------
+
 
 // Passport middleware
 app.use(passport.initialize());

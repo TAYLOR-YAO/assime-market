@@ -84,7 +84,7 @@ class TakeMoney extends Component {
         currency = "USD"
         stripeKey = "pk_test_cM23Qzh2EOsyccPOWDoXmVUA"
         locale = "en"
-        email = {true}
+        // email = {true}
         shippingAddress = {true} 
         billingAddress = {true}
         zipCode = {true}
@@ -97,8 +97,8 @@ class TakeMoney extends Component {
         reconfigureOnUpdate = {false}
         triggerEvent="onClick"
         >
-        <button className="btn-primary" id="stripe-Btn">
-         Pay Now
+        <button  id="stripe-Btn">
+         Pay With Credit/Debit Card
         </button>
       </StripeCheckout>
     )

@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../../Utils/authActions";
 import classnames from "classnames";
+import "./Login.css"
 class Login extends Component {
   constructor() {
     super();
@@ -41,7 +42,7 @@ render() {
     const { errors } = this.state;
 return (
       <div className="container">
-        <div style={{ marginTop: "4rem" }} className="row">
+        <div style={{ marginTop: "6rem" }} className="row">
           <div className="col s8 offset-s2">
   
             <div className="col s12" style={{ paddingLeft: "11.250px" }}>
@@ -121,29 +122,3 @@ export default connect(
   mapStateToProps,
   { loginUser }
 )(Login)
-
-
-
-
-
-
-
-// import React, {Component} from 'react'; 
-// import {Modal} from "react-bootstrap";
-// import HomePage from "../HomePages";
-// import "./Login.css";
-
-// class Login extends Component {
-//     state={isSignedIn:false}
-
-//     render () {
-//     return(
-//             <div style={{marginTop:"300px"}}>
-//                 <div className="logins" >
-//                     <h1>Login</h1>
-//                 </div>
-//             </div>
-//         )
-//     }
-// }
-// export default Login;

@@ -1,8 +1,8 @@
 import React,{Component} from "react";
 import { connect } from "react-redux";
-import {Modal, Row, Col} from "react-bootstrap";
 import StipeCheckout from "./StripeCheckout";
-import ShipmentAddress from "../Grgions/ShipmentAddress";
+// import ShipmentAddress from "../Grgions/ShipmentAddress";
+import PaypalCheckout from "./PaypalCheckout/PaypalCheckout";
 import "./Checkout.css";
 
 let tax = 8.7;
@@ -62,59 +62,19 @@ class Trigger extends Component {
     }
     render() {
       return (
-        <div className="modal-container" >
-            <div className="summary-checkout">
-              <button className="checkout-cta" onClick={() => this.setState({ show: true })}>Go to Secure Checkout</button>
-            </div>
-  
-          <Modal
-            show={this.state.show}
-            onHide={this.handleHide}
-            container={this}
-            aria-labelledby="contained-modal-title"
-          >
-            <Modal.Header closeButton>
-              <Modal.Title id="contained-modal-title">
-                Select your payment method!
-              </Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-                <Row>
-                    <h3>Total: ${this.state.total.toFixed(2)}</h3>
-                </Row>                
-                <Row >
-                    <Col md={3}>
-                        <h6> Credit & debit</h6>
-                        <hr/>
-                        <br/>
-                        <div style={{position:"relative", bottom:"15px"}}>
-                          <StipeCheckout/>
-                        </div>
-                        
-                    </Col>
-                    <Col md={3} style={{borderLeft:"3px solid #333"}}>
-                        <h6>Fooz</h6>
-                        <hr/> 
-                        <img className="payement-logo" src="http://anoumabo.ci/wp-content/uploads/2017/06/moov-1.png" alt="Flooz"/>                      
-                    </Col> 
-                    <Col md={3} style={{borderLeft:"3px solid #333"}}>
-                        <h6>Tmoney</h6>
-                        <hr/>  
-                        <img className="payement-logo" src="https://lh3.googleusercontent.com/q3m20-lF305VIaIYR9q7PwpvWadez2P_fE1E3Dq3rV7pXlqwBik-Jq88lRnghLlJcA" alt="Tmoney" />                      
-                    </Col>
-                    <Col md={3} style={{borderLeft:"3px solid #333"}}>
-                        <h6>MTN Money</h6>
-                        <hr/>
-                        <img className="payement-logo" src="https://www.paymentscardsandmobile.com/wp-content/uploads/2013/09/MTN-Mobile-Money.jpg" alt="Mtn money"/>                                                                      
-                    </Col>                                                                                                  
-                </Row> 
-                <button className="btn-close" onClick={this.handleHide}  style={{float:"right"}} >Close</button>
+        <div >
+            
+          <section class="methodes">
+              <div class="one"><StipeCheckout/> </div>
+              <div class="or"><h1>Or</h1></div>
+              <div class="two"><PaypalCheckout/></div>
+          </section>
 
-                <Row>
-                  <ShipmentAddress/>
-                </Row>
-            </Modal.Body>
-          </Modal>
+          {/* <StipeCheckout/> 
+          <PaypalCheckout/> */}
+
+{/* Add Mobile payment later */}
+  
         </div>
       );
     }

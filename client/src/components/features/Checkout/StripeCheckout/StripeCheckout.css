@@ -1,6 +1,6 @@
 #stripe-Btn{
-    border-radius: 20px;
+    border-radius: 20px !important;
     padding: -5px !important;
-    background: blue !important;
-    font-size: 12px;
+    background: #6351ce !important;
+    font-size: 24px;
 }

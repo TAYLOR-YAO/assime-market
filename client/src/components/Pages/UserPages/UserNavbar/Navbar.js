@@ -25,7 +25,7 @@ class Navbar extends Component {
           <div className="toolBar-links">
             <ul>
             {/* <li><a href="/test">TEST</a></li> */}
-              <li><a href="/home">Happy shopping, {`${user.name}`}</a></li>
+              <li><a href="/home">{user.name ? `Happy shopping, ${user.name}`: " "}</a></li>
               <li><a href="/home">Home</a></li>
               <li><a href="/cart">My Cart</a></li>
              <LogUserOut/>
